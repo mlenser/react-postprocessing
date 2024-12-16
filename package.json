@@ -36,7 +36,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "vite build && tsc --emitDeclarationOnly",
-    "prepare": "yarn build",
+    "prepare": "pnpm build",
     "eslint": "eslint . --fix --ext=js,ts,jsx,tsx",
     "eslint:ci": "eslint . --ext=js,ts,jsx,tsx",
     "test": "echo no tests yet",
@@ -97,5 +97,6 @@
     "@types/react-dom": "^19.0.2",
     "@types/three": "^0.171.0",
     "three": "^0.171.0"
-  }
+  },
+  "packageManager": "pnpm@9.15.0"
 }

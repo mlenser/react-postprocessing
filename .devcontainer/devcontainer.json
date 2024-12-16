@@ -4,9 +4,9 @@
     "memory": "8gb"
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "yarn install",
+  "updateContentCommand": "pnpm install",
   "postCreateCommand": "",
-  "postAttachCommand": "yarn storybook",
+  "postAttachCommand": "pnpm storybook",
   "customizations": {
     "codespaces": {
       "openFiles": ["CONTRIBUTING.md"]
