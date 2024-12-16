@@ -3,6 +3,7 @@
 
 import { forwardRef, useMemo } from 'react'
 import { CanvasTexture, Color, NearestFilter, RepeatWrapping, Texture, Uniform } from 'three'
+import * as THREE from 'three'
 import { Effect } from 'postprocessing'
 
 const fragment = `

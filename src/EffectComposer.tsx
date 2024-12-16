@@ -1,5 +1,6 @@
 import type { TextureDataType } from 'three'
 import { HalfFloatType, NoToneMapping } from 'three'
+import * as THREE from 'three'
 import React, {
   forwardRef,
   useMemo,
@@ -8,6 +9,7 @@ import React, {
   createContext,
   useRef,
   useImperativeHandle,
+  type JSX,
 } from 'react'
 import { useThree, useFrame, useInstanceHandle } from '@react-three/fiber'
 import {
@@ -32,7 +34,7 @@ export const EffectComposerContext = createContext<{
   resolutionScale?: number
 }>(null!)
 
-export type EffectComposerProps = {  
+export type EffectComposerProps = {
   enabled?: boolean
   children: JSX.Element | JSX.Element[]
   depthBuffer?: boolean
